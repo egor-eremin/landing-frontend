@@ -1,0 +1,17 @@
+// stylelint-disable at-rule-empty-line-before
+
+@import "variables";
+@import "functions";
+@import "mixins";
+@import "sprites";
+@import "fonts";
+@import "vendor";
+@import "base";
+@import "helpers";
+body {
+	font-family: $main-fonts;
+	font-weight: 400;
+	color: $color-main-fonts;
+	font-size: 16px;
+	background-color: $color-white;
+}
