@@ -1,0 +1,45 @@
+.template-wrapper_welcom-block {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	position: relative;
+	padding-top: 107px;
+	padding-bottom: 226px;
+}
+.btn_welcom-block {
+	padding-left: 30.5px;
+	padding-right: 30.5px;
+}
+.scroll-icon {
+	position: absolute;
+	bottom: 79px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+}
+.prev-text_welcom-block {
+	font-size: 28px;
+	line-height: 1.71;
+	opacity: 0;
+	transition: .3s ease;
+}
+.typed-text-wrapper {
+	text-align: center;
+	margin-bottom: 34px;
+}
+.typed-text-wrapper .typed-cursor {
+	font-size: 86px;
+}
+.button-wrapper_welcom-wrapper {
+	opacity: 0;
+	transition: .3s ease;
+}
+.welcom-block.active .prev-text_welcom-block {
+	animation: animationWelcomText .3s both 2.4s;
+}
+.welcom-block.active .button-wrapper_welcom-wrapper {
+	animation: animationWelcomText .3s both 2.7s;
+}
+.welcom-block.active .scroll-icon {
+	animation: animationScrollIcon .3s both 3s;
+}

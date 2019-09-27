@@ -1,0 +1,21 @@
+.template-wrapper_up-wrapper {
+	margin-top: 176px;
+	margin-bottom: 32px;
+	display: flex;
+	justify-content: flex-end;
+}
+.up-button {
+	width: 32px;
+	height: 32px;
+	border-radius: 2px;
+	transition: .3s ease;
+	background-color: rgba(29,29,29,.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 2;
+	&:hover {
+		background-color: rgba(29,29,29,.6);
+	}
+}

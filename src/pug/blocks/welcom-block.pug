@@ -1,0 +1,28 @@
+mixin welcom-block-content
+	.template-wrapper.template-wrapper_welcom-block.full-height
+		.typed-text-wrapper
+			h1.main-h1.typed-text
+				|
+		.prev-text.prev-text_welcom-block
+			|С предварительной оценкой, постраничной оплатой и точно в срок
+		.button-wrapper.button-wrapper_welcom-wrapper
+			button.btn.btn_welcom-block.anchor-form Оставить заявку на вёрстку
+			.after-button-text Пришлём смету в течение дня
+		.scroll-icon
+			| <svg width="21px" height="34px" viewBox="0 0 21 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			|     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+			|         <g transform="translate(-690.000000, -751.000000)" fill="#4A4D52">
+			|             <g transform="translate(690.000000, 751.000000)">
+			|                 <path d="M10.5,0 C16.2989899,0 21,4.70101013 21,10.5 L21,23.5 C21,29.2989899 16.2989899,34 10.5,34 C4.70101013,34 0,29.2989899 0,23.5 L0,10.5 C0,4.70101013 4.70101013,0 10.5,0 Z M10.5,1 C5.25329488,1 1,5.25329488 1,10.5 L1,23.5 C1,28.7467051 5.25329488,33 10.5,33 C15.7467051,33 20,28.7467051 20,23.5 L20,10.5 C20,5.25329488 15.7467051,1 10.5,1 Z" fill-rule="nonzero"></path>
+			|                 <rect x="10" y="6" width="1" height="7" rx="0.5"></rect>
+			|             </g>
+			|         </g>
+			|     </g>
+			| </svg>
+mixin welcom-block(class_modification)
+	if class_modification === undefined
+		section(class= 'welcom-block')
+			+welcom-block-content
+	else
+		section(class= 'welcom-block ' + class_modification)
+			+welcom-block-content

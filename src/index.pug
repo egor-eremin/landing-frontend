@@ -1,7 +1,26 @@
 extends pug/base
 
 append vars
-	//- ...
+	- title = "Адаптивная вёрстка по вашим макетам"
+	- meta.viewport = "width=device-width, initial-scale=1"
+	- link.appleTouchIcon180x180 = "favicon/apple-touch-icon.png"
+	- link.icon16x16 = "favicon/favicon-16x16.png"
+	- link.icon32x32 = "favicon/favicon-32x32.png"
+	- link.manifest = "favicon/site.webmanifest"
+	- link.maskIcon.href = "favicon/safari-pinned-tab.svg"
+	- link.maskIcon.color = "00f4ff"
+	- meta.msapplicationTileColor = "#ffffff"
+	- meta.themeColor = "#ffffff"
 
 block content
-	//- ...
+	.all-wrapper
+		+header
+		+welcom-block
+		+grey-block('advantages section-animate section-animate_1')
+		+projects-block('section-animate section-animate_2')
+		+grey-block_operation-procedure('operating-procedure section-animate section-animate_3')
+		+reviews-block('section-animate section-animate_4')
+		+grey-block_our-team('our-team section-animate section-animate_5')
+		+request('section-animate section-animate_6')
+		+up-page('section-animate section-animate_7')
+		+footer

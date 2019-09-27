@@ -1,0 +1,48 @@
+.main-footer {
+	background-color: $color-black-add-file;
+}
+.template-wrapper_footer {
+	display: flex;
+	align-items: flex-start;
+	padding: 38px 0 50px;
+}
+.call-text {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.11;
+	color: $color-white;
+	margin-bottom: 23px;
+}
+.footer-phone {
+	font-size: 44px;
+	font-weight: 700;
+	line-height: 1;
+	color: $color-white;
+	margin-bottom: 10px;
+	border-radius: 2px;
+}
+.footer-operating-mode {
+	font-size: 16px;
+	line-height: 1.25;
+	color: $color-white;
+}
+.actual-address,
+.inn {
+	font-size: 16px;
+	line-height: 1.5;
+	color: $color-white;
+}
+.public-offer {
+	font-size: 16px;
+	line-height: 1.5;
+	display: inline;
+}
+.footer-col_footer-phone {
+	margin-right: 269px;
+}
+.actual-address {
+	margin-bottom: 15px;
+}
+.inn {
+	margin-bottom: 15px;
+}

@@ -11,12 +11,16 @@ a {
 	display: inline-block;
 	vertical-align: top;
 }
+figure {
+	margin: 0;
+}
 button {
 	display: inline-block;
 	border: none;
 	background-color: transparent;
 	color: inherit;
 	padding: 0;
+	cursor: pointer;
 }
 p {
 	margin: 0;
@@ -54,6 +58,9 @@ label {
 input {
 	border: none;
 	-webkit-appearance: none;
+}
+svg {
+	vertical-align: top;
 }
 input::-webkit-input-placeholder       {color: $color-placeholder; opacity: 1; transition: opacity 0.3s ease;}
 input::-moz-placeholder                {color: $color-placeholder; opacity: 1; transition: opacity 0.3s ease;}

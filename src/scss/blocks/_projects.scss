@@ -1,0 +1,320 @@
+.prev-text_by-projects {
+	max-width: 892px;
+}
+.projects-wrapper {
+	margin-top: 116px;
+	overflow: hidden;
+	transition: .3s ease;
+}
+.projects-item {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 80px;
+}
+.projects-slider-wrapper {
+	//border-radius: 8px;
+	//background-color: $color-grey-background-project-slider;
+	padding: 40px 54px 48px;
+	height: 100%;
+}
+.projects-slider-col {
+	width: 812px;
+	margin-right: 56px;
+	position: relative;
+}
+.projects-slider__header {
+	border-radius: 8px 8px 0 0;
+	background-color: $color-grey-header-border;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	padding-right: 12px;
+	padding-left: 12px;
+}
+.projects-slider__header-dots {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: $color-grey-header-dots;
+	margin-right: 4px;
+}
+.projects-slider__item {
+	height: 440px;
+	opacity: 0.95;
+	border-radius: 8px;
+	background-color: rgba(250,250,250,.95);
+}
+.projects-slider {
+	background-color: $color-white;
+	border-radius: 8px;
+	overflow: hidden;
+	position: relative;
+	//box-shadow: 0 0 50px 0 rgba(83, 97, 119, 0.15);
+}
+.projects-description-link {
+	color: $color-blue-button;
+	font-size: 32px;
+	line-height: 1.31;
+	position: relative;
+	transition: .3s ease;
+	border-bottom: 1px solid rgba(0, 102, 255, 0);
+	margin-bottom: 26px;
+	border-radius: 2px;
+	&::before {
+		content: "";
+		width: 16px;
+		height: 16px;
+		display: block;
+		background: url("../images/link.svg") no-repeat;
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translateX(calc(100% + 10px));
+	}
+	&:hover {
+		border-bottom-color: rgba(0, 102, 255, 1);
+		}
+}
+.description-title {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.11;
+	margin-bottom: 21px;
+}
+.description-text p {
+	font-size: 16px;
+	line-height: 1.25;
+	margin-bottom: 8px;
+}
+.description-text p:last-child {
+	margin-bottom: 0;
+}
+.detail-project:not(:last-child) {
+	margin-bottom: 29px;
+}
+.member-photo {
+	width: 40px;
+	height: 40px;
+	border-radius: 8px;
+	overflow: hidden;
+	margin-right: 20px;
+	margin-bottom: 5px;
+}
+.member-list__item {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 19px;
+}
+.member-name {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.25;
+	margin-bottom: 5px;
+}
+.member-position {
+	font-size: 14px;
+	line-height: 1.43;
+	color: $color-header-information;
+}
+.member-description {
+		margin-top: -4px;
+}
+.member-list__item:last-child {
+	margin-bottom: 0;
+}
+.projects-description-col {
+	margin-top: -1px;
+}
+.member-list {
+	margin-top: 23px;
+}
+.btn-show-more {
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: center;
+	border-radius: 4px;
+	border: solid 1px $color-grey-more-show-button;
+	background-color: $color-white;
+	max-width: 812px;
+	width: 100%;
+	padding-top: 14px;
+	padding-bottom: 18px;
+	transition: .3s ease;
+	&.hide {
+		display: none;
+	}
+	&:hover {
+		box-shadow: 0 2px 8px 0 #eeeeee;
+		border: solid 1px #eef1f8;
+	}
+	&:active {
+		border: solid 1px #eef1f8;
+		transform: translateY(8px);
+	}
+}
+.layout-cost {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 81px 0 120px;
+	box-shadow: 0px 0px 0px 8px #fafafa;
+	margin-top: 240px;
+}
+.layout-cost__title {
+	font-weight: 800;
+	line-height: 1.17;
+	text-align: center;
+	font-size: 48px;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 31px;
+}
+.layout-cost__text {
+	max-width: 648px;
+	font-size: 22px;
+	line-height: 1.45;
+	text-align: center;
+}
+.projects-slider-container {
+	height: calc(100% - 32px);
+	background-color: #ffffff;
+}
+.slider-content-wrapper {
+	border-radius: 8px;
+	box-shadow: 0 0 50px 0 rgba(83, 97, 119, 0.15);
+	height: 100%;
+	overflow: hidden;
+}
+.projects-slider .owl-dots {
+	position: absolute;
+	bottom: 11px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.projects-slider button.owl-dot {
+	width: 40px;
+	height: 12px;
+	border-radius: 1px;
+	background-color: transparent;
+	position: relative;
+	overflow: hidden;
+	margin-right: 12px;
+	&::after, &::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		top: 50%;
+		border-radius: 1px;
+		background-color: $color-blue-button;
+		transform: translate(-100%, 0);
+		z-index: 2;
+	}
+	&::after {
+		height: 2px;
+		transform: translate(0, -50%);
+		background-color: $color-dark-grey-header-slider;
+		z-index: 1;
+	}
+}
+.projects-slider button.owl-dot:last-child {
+	margin-right: 0;
+}
+.projects-slider button.owl-dot.animate::before {
+	animation-name: animationDots;
+	animation-duration: 4000ms;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+.projects-slider button.owl-dot.stopAnimation::before {
+	animation-duration: 0s;
+	transform: translate(0, -50%);
+}
+.projects-slider:hover button.owl-dot.animate::before {
+	animation-play-state: paused;
+}
+.all-projects {
+	width: 100%;
+	max-width: 812px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	padding-top: 14px;
+	padding-bottom: 18px;
+	margin-bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	&.hide {
+		display: none;
+	}
+}
+
+.show-all-svg {
+	margin-left: 12px;
+}
+@keyframes animationDots {
+	0% {
+		transform: translate(-100%, -50%);
+	}
+	100% {
+		transform: translate(0, -50%);
+	}
+}
+.projects-quantity {
+	width: 30px;
+	height: 22px;
+	position: absolute;
+	background: url("../../images/page.svg") no-repeat;
+	bottom: 12px;
+	right: 20px;
+	z-index: 1;
+}
+.number-items {
+	color: $color-grey-header-border;
+	font-size: 12px;
+	line-height: 1.33;
+	width: 26px;
+	height: 18px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.show-all-wrapper {
+	margin-top: -24px;
+}
+.crossed-out-text {
+	position: relative;
+}
+.line-svg {
+	position: absolute;
+	z-index: 1;
+	left: 13px;
+	top: -3px;
+	& path {
+		stroke-dashoffset: 3000px;
+		stroke-dasharray: 3000px;
+	}
+}
+.crossed-out-text.animation .line-svg path {
+	animation: animationsText 1s cubic-bezier(.75,.06,.37,1.22) both;
+}
+.crossed-out-text-wrapper {
+	position: relative;
+	z-index: 2;
+}
+@keyframes animationsText {
+	0% {
+		stroke-dashoffset: 3000px;
+	}
+	100% {
+		stroke-dashoffset: 1356px;
+	}
+}

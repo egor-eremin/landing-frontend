@@ -1,0 +1,47 @@
+mixin grey-block-content_operation-procedure
+	.template-wrapper.section-wrapper.template-wrapper_grey-block.full-height
+		.grey-block__col.grey-block__col_operation-procedure
+			h2.main-h2 Порядок <span class="red-text">совместной работы</span>
+			.grey-block__text
+				| Сюда&nbsp;бы текст написать, примерно три строки. Чтобы размер плашки был в&nbsp;размер текстового блока :(
+		.grey-block__col
+			ul.advantages-list.advantages-list_operation-procedure
+				li.advantages-list__item.advantages-list__item_0.advantages-list__item_operation-procedure
+					.advantages-list__item-icon 1
+					.advantages-text-block
+						.advantages-title Оценка проекта
+						.advantages-text
+							| После получения от&nbsp;вас макетов, менеджер подготовит смету и&nbsp;отправит вам на&nbsp;почту
+				li.advantages-list__item.advantages-list__item_1.advantages-list__item_operation-procedure
+					.advantages-list__item-icon 2
+					.advantages-text-block
+						.advantages-title Оплата
+						.advantages-text
+							|После согласования сметы, вам необходимо оплатить 100% постранично или за&nbsp;весь проект
+				li.advantages-list__item.advantages-list__item_2.advantages-list__item_operation-procedure
+					.advantages-list__item-icon 3
+					.advantages-text-block
+						.advantages-title Вёрстка макетов
+						.advantages-text
+							| В&nbsp;оговоренные сроки, наши специлисты сверстают
+							| и&nbsp;протестируют все страницы
+				li.advantages-list__item.advantages-list__item_3.advantages-list__item_operation-procedure
+					.advantages-list__item-icon 4
+					.advantages-text-block
+						.advantages-title Демонстрация вёрстки
+						.advantages-text
+							|Отправим вам ссылки сверстанных страниц для согласования
+				li.advantages-list__item.advantages-list__item_4.advantages-list__item_operation-procedure
+					.advantages-list__item-icon 5
+					.advantages-text-block
+						.advantages-title Завершение проекта
+						.advantages-text
+							| После подписания акта, вы получите
+							| архив с исходными файлами
+mixin grey-block_operation-procedure(class_modification)
+	if class_modification === undefined
+		section(class= 'grey-block animation-advantages')
+			+grey-block-content_operation-procedure
+	else
+		section(class= 'grey-block animation-advantages ' + class_modification)
+			+grey-block-content_operation-procedure

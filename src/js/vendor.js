@@ -5,10 +5,12 @@ import 'slick-carousel';
 import 'magnific-popup';
 import 'jquery-validation';
 import 'focus-visible';
+import 'dm-file-uploader';
 import objectFitImages from 'object-fit-images';
+
+
 svg4everybody();
 objectFitImages();
-
 window.$ = $;
 window.jQuery = $;
 
