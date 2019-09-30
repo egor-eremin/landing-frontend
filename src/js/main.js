@@ -82,6 +82,12 @@ $(document).ready(function () {
             showText();
         })
     })();
+    (function addedHeightBlock() {
+        calculatesHeight();
+        $(window).on('resize', function () {
+            calculatesHeight();
+        });
+    })();
     (function addedProgressBar() {
         var percent = 100 - ($(window).scrollTop() / ($(document).height() - $(window).height()) * 100);
 
@@ -127,8 +133,8 @@ $(document).ready(function () {
                         }
                 });
             }
-
         });
+
      })();
     (function initOurTeamAnimation() {
         var controller = new ScrollMagic.Controller();
@@ -205,6 +211,7 @@ $(document).ready(function () {
                 offset: -100
             })
                 .setTween(value, {opacity: '1', transform: 'translateY(0)'})
+                // .addIndicators()
                 .addTo(controller)
         })
     })();
@@ -259,7 +266,6 @@ function addedNewFile(id, file) {
             '</button><span class="name-file" data-id-text="' + id + '">' + file.name + '</span></li>').appendTo('.upload-list');
     }
 };
-
 function deletesText() {
     if ($('.upload-list__item').length > 0) {
         $('.label-text-download').hide();
@@ -334,3 +340,29 @@ function addedProgressUpload(id, percent) {
     }
 
 };
+function media(mediaQueryString, action){
+    'use strict';
+    var handleMatchMedia = function (mediaQuery) {
+        if (mediaQuery.matches) {
+            if (action  && typeof(action) === 'function') {
+                action();
+            }
+        }
+    };
+    var mql = window.matchMedia(mediaQueryString); //стандартный медиазапрос для смены режима просмотра
+    handleMatchMedia(mql);
+    mql.addListener(handleMatchMedia);
+}
+function calculatesHeight() {
+    $('.animation-advantages').each(function (index, value) {
+        var item = $(value).find('.advantages-list__item');
+        var itemsLength = item.length;
+        var itemsHeight = item.outerHeight();
+        var paddingTop = $(value).find('.template-wrapper_grey-block').css('padding-top');
+        var paddingBottom = $(value).find('.template-wrapper_grey-block').css('padding-bottom');
+        var marginTop = $(value).find('.advantages-list').css('margin-top');
+        var allHeight = itemsLength * itemsHeight + parseInt(paddingTop) + parseInt(paddingBottom) + parseInt(marginTop);
+
+        $(value).css('height', '' + allHeight + 'px');
+    });
+}

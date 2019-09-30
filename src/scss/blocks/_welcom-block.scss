@@ -5,6 +5,7 @@
 	position: relative;
 	padding-top: 107px;
 	padding-bottom: 226px;
+	height: calc(100vh - 111px);
 }
 .btn_welcom-block {
 	padding-left: 30.5px;
@@ -28,7 +29,13 @@
 	margin-bottom: 34px;
 }
 .typed-text-wrapper .typed-cursor {
-	font-size: 86px;
+	//font-size: 86px;
+	font-size: 0;
+	height: 76px;
+	width: 3px;
+	display: inline-block;
+	background: #151515;
+	transform: translateY(-62px);
 }
 .button-wrapper_welcom-wrapper {
 	opacity: 0;

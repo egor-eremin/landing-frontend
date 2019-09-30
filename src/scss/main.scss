@@ -150,7 +150,7 @@ label.error {
 }
 .section-animate {
 	opacity: 0;
-	transform: translateY(50px);
+	transform: translateY(70px);
 }
 
 @import "blocks/header";
@@ -163,3 +163,4 @@ label.error {
 @import "blocks/request";
 @import "blocks/up-block";
 @import "blocks/footer";
+@import "media";
