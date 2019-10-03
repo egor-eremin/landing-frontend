@@ -116,9 +116,8 @@ body {
 	color: $color-blue-button;
 	border-bottom: 1px solid rgba(0,102,255,0);
 	transition: .3s ease;
-	border-radius: 2px;
 	&:hover {
-		border-bottom-color: rgba(0,102,255,1);
+		border-bottom: 1px solid rgba(0,102,255,1);
 	}
 }
 .custom-scroll::-webkit-scrollbar {
@@ -129,7 +128,8 @@ body {
 .custom-scroll::-webkit-scrollbar-thumb {
 	width: 3px;
 	background: #cfd2d6;
-	border-radius: 1.5px; }
+	border-radius: 1.5px;
+}
 label.error {
 	display: none;
 }

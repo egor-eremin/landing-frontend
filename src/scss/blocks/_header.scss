@@ -86,6 +86,10 @@
 	font-weight: 600;
 	line-height: 1.33;
 	border-radius: 2px;
+	transition: .3s ease;
+	&:hover {
+		color: $color-blue-button;
+	}
 }
 .burger-navigation.active .burger-navigation__item:nth-child(1) {
 	top: 50%;
@@ -94,4 +98,8 @@
 .burger-navigation.active .burger-navigation__item:nth-child(2) {
 	bottom: 50%;
 	transform: translate(-50%, 50%) rotate(-45deg);
+}
+.main-menu__list-item.active a {
+	color: $color-grey-hover-link;
+	pointer-events: none;
 }

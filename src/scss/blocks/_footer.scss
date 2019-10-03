@@ -37,6 +37,9 @@
 	line-height: 1.5;
 	display: inline;
 }
+.public-offer + .public-offer {
+	margin-top: 4px;
+}
 .footer-col_footer-phone {
 	margin-right: 269px;
 }
@@ -45,4 +48,26 @@
 }
 .inn {
 	margin-bottom: 15px;
+}
+.footer-col_information {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.footer-link {
+	margin-left: 9px;
+}
+.megamir-link-text {
+	border-bottom: 1px solid rgba(0, 102, 255, 0);
+	transition: .3s ease;
+}
+.megamir-link {
+	display: flex;
+	align-items: baseline;
+	&.content-link:hover {
+		border-color: transparent;
+	}
+	&:hover .megamir-link-text {
+		border-bottom-color: rgba(0, 102, 255, 1);
+	}
 }

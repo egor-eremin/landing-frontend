@@ -91,8 +91,13 @@
 	transition-property: transform, opacity;
 	transition-duration: 0.5s;
 	transition-timing-function: ease;
-	pointer-events: none;
-
+	z-index: 1;
+}
+//.reviews-list__item:not(:first-child) {
+//	pointer-events: none;
+//}
+.reviews-list__item:last-child {
+	z-index: 2;
 }
 .reviews-list__author {
 	font-size: 22px;

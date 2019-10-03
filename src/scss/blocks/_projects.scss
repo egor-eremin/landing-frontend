@@ -59,7 +59,7 @@
 	transition: .3s ease;
 	border-bottom: 1px solid rgba(0, 102, 255, 0);
 	margin-bottom: 26px;
-	border-radius: 2px;
+	//border-radius: 2px;
 	&::before {
 		content: "";
 		width: 16px;
@@ -69,7 +69,7 @@
 		position: absolute;
 		top: 0;
 		right: 0;
-		transform: translateX(calc(100% + 10px));
+		transform: translateX(calc(100% + 10px)) translateY(2px);
 	}
 	&:hover {
 		border-bottom-color: rgba(0, 102, 255, 1);
@@ -253,8 +253,8 @@
 		display: none;
 	}
 }
-
 .show-all-svg {
+	transform: translateY(2px);
 	margin-left: 12px;
 }
 @keyframes animationDots {

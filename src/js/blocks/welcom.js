@@ -5,7 +5,7 @@
             setTimeout(function () {
                 var textTyped = new Typed('.typed-text', {
                     strings: ['Адаптивная <span class="red-text">вёрстка</span><br> по вашим макетам'],
-                    typeSpeed: 40,
+                    typeSpeed: 50,
                 });
             }, 300);
         },
@@ -16,6 +16,6 @@
         e.preventDefault();
         var requestForm = $('.request').offset().top;
 
-        $('body, html').animate({ scrollTop: requestForm}, 1100);
+        $('body, html').animate({ scrollTop: requestForm}, 300);
     })
 })();

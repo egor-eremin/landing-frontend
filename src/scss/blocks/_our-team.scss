@@ -5,7 +5,7 @@
 	margin-top: 28px;
 }
 .competencies__item:not(:last-child) {
-	margin-right: 24px;
+	margin-right: 20px;
 }
 .team-list__row {
 	display: flex;
@@ -44,13 +44,14 @@
 		content: '';
 		width: 40px;
 		height: 40px;
-		background: url("../images/crown.svg") no-repeat;
+		background: url("../images/cool.png") no-repeat;
+		background-size: 40px;
 		position: absolute;
 		bottom: 8px;
 		left: 8px;
 	}
 }
-.grey-block__col_our-team {
+.grey-block__col_our-team:nth-child(1) {
 	margin-right: 32px !important;
 }
 .team-list {
@@ -60,6 +61,5 @@
 	overflow: hidden;
 }
 .competencies__item {
-	opacity: 0;
 	margin-bottom: 13px;
 }

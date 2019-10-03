@@ -57,6 +57,11 @@
 .form-item {
 	margin-bottom: 41px;
 }
+.form-input:focus,
+.form-textarea:focus {
+	box-shadow: 0 0 0 3px $color-blue-focus-box-shadow;
+	border-color: $color-blue-focus-border;
+}
 .form-textarea {
 	resize: none;
 	height: 88px;

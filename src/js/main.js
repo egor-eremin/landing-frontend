@@ -24,12 +24,12 @@ $(document).ready(function () {
     (function validationFormCallback() {
         validationForm('.request-form');
     })();
-    (function addPhoneMask() {
-        $('.user-phone').inputmask("+7 (999) 999-99-99", {
-            placeholder: "_",
+    // (function addPhoneMask() {
+        // $('.user-phone').inputmask("+7 (999) 999-99-99", {
+        //     placeholder: "_",
             // showMaskOnFocus: false,
-        })
-    })();
+        // })
+    // })();
     (function closeAnswerPopup() {
         $(document).on('click', '.close-popup', function (e) {
             e.preventDefault();
@@ -163,38 +163,38 @@ $(document).ready(function () {
                 transform: "translateX(0)",
                 opacity: 1
             })
-            .to('.competencies__item_1',.5,{
-                opacity: 1
-            })
-            .to('.competencies__item_2',.5,{
-                opacity: 1
-            })
-            .to('.competencies__item_3',.5,{
-                opacity: 1
-            })
-            .to('.competencies__item_4',.5,{
-                opacity: 1
-            })
-            .to('.competencies__item_5',.5,{
-                opacity: 1
-            })
-            .to('.competencies__item_6',.5,{
-                opacity: 1
-            })
-            .to('.competencies__item_7',.5,{
-                opacity: 1
-            })
-            .to('.competencies__item_8',.5,{
-                opacity: 1
-            })
-            .to('.competencies__item_9',.5,{
-                opacity: 1
-            })
+            // .to('.competencies__item_1',.5,{
+            //     opacity: 1
+            // })
+            // .to('.competencies__item_2',.5,{
+            //     opacity: 1
+            // })
+            // .to('.competencies__item_3',.5,{
+            //     opacity: 1
+            // })
+            // .to('.competencies__item_4',.5,{
+            //     opacity: 1
+            // })
+            // .to('.competencies__item_5',.5,{
+            //     opacity: 1
+            // })
+            // .to('.competencies__item_6',.5,{
+            //     opacity: 1
+            // })
+            // .to('.competencies__item_7',.5,{
+            //     opacity: 1
+            // })
+            // .to('.competencies__item_8',.5,{
+            //     opacity: 1
+            // })
+            // .to('.competencies__item_9',.5,{
+            //     opacity: 1
+            // })
 
         var scene = new ScrollMagic.Scene({
             triggerElement: ".our-team",
-            duration: 500,
-            offset: 100
+            duration: 300,
+            // offset: 100
         })
             .setTween(tween)
             // .addIndicators()
@@ -215,6 +215,11 @@ $(document).ready(function () {
                 .addTo(controller)
         })
     })();
+    (function countReviews() {
+        var reviewsLength = $('.reviews-list__item').length;
+
+        $('.review-number').text(reviewsLength);
+    })()
 });
 
 function addedNewFile(id, file) {
@@ -279,17 +284,17 @@ function showText() {
     }
 }
 function validationForm(formInit) {
-    $.validator.addMethod("minlenghtphone", function (value, element) {
-
-            return value.replace(/\D+/g, '').length > 10 || value.replace(/\D+/g, '').length == 0;
-        },
-        "");
+    // $.validator.addMethod("minlenghtphone", function (value, element) {
+    //
+    //         return value.replace(/\D+/g, '').length > 10 || value.replace(/\D+/g, '').length == 0;
+    //     },
+    //     "");
     $(formInit).validate({
-        rules: {
-            phone:  {
-                minlenghtphone: true,
-            },
-        },
+        // rules: {
+        //     phone:  {
+        //         minlenghtphone: true,
+        //     },
+        // },
         submitHandler: function(form) {
 
 
