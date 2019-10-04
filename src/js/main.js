@@ -208,7 +208,7 @@ $(document).ready(function () {
             var scene = new ScrollMagic.Scene({
                 triggerElement: value,
                 duration: 300,
-                offset: -100
+                offset: -300
             })
                 .setTween(value, {opacity: '1', transform: 'translateY(0)'})
                 // .addIndicators()
@@ -317,7 +317,11 @@ function validationForm(formInit) {
                             showCloseBtn: false,
                             type: 'inline',
                             callbacks: {
+                                beforeOpen: function () {
+                                  $('html').css('overflow', 'hidden');
+                                },
                                 afterClose: function () {
+                                    $('html').css('overflow', 'visible');
                                     $(form).find('input').val('');
                                     $(form).find('textarea').val('');
                                 }

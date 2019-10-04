@@ -1,6 +1,6 @@
 (function initProjectSlider() {
     classSlider = function (owl) {
-        var transitionTime = 4000;
+        var transitionTime = 6000;
         var counter;
         var timeInterval;
         var timer = 0;

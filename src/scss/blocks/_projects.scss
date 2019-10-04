@@ -226,7 +226,7 @@
 }
 .projects-slider button.owl-dot.animate::before {
 	animation-name: animationDots;
-	animation-duration: 4000ms;
+	animation-duration: 6000ms;
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
 }
@@ -293,7 +293,8 @@
 .crossed-out-text {
 	position: relative;
 }
-.line-svg {
+.line-svg,
+.line-svg-mobile {
 	position: absolute;
 	z-index: 1;
 	left: 13px;
@@ -303,7 +304,14 @@
 		stroke-dasharray: 3000px;
 	}
 }
-.crossed-out-text.animation .line-svg path {
+.line-svg-mobile {
+	display: none;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 0;
+}
+.crossed-out-text.animation .line-svg path,
+.crossed-out-text.animation .line-svg-mobile path {
 	animation: animationsText 1s cubic-bezier(.75,.06,.37,1.22) both;
 }
 .crossed-out-text-wrapper {
@@ -317,4 +325,10 @@
 	100% {
 		stroke-dashoffset: 1356px;
 	}
+}
+.slider-content-wrapper-mobile {
+	display: none;
+}
+.projects {
+	overflow: hidden;
 }
