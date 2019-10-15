@@ -254,6 +254,9 @@
 		line-height: 1.4;
 		margin-bottom: 3px;
 	}
+	.btn-show-more {
+		max-width: 70%;
+	}
 }
 @media (max-width: 1024px) {
 	.animation-advantages {
@@ -402,9 +405,9 @@
 		padding-bottom: 47px;
 	}
 	.template-wrapper_advantages {
-		padding-bottom: 56px;
+		padding-bottom: 96px;
 	}
-	.main-h2_center {
+	.main-h2_center:not(.main-h2_reviews) {
 		text-align: left;
 	}
 	.next-reviews {
@@ -593,7 +596,15 @@
 	.advantages-list__item {
 		width: 100%;
 	}
-	.main-h1, .main-h2 {
+	.main-h1, .main-h2, .typed-text-wrapper .typed-cursor {
 		font-size: 42px;
+	}
+	.request-content,
+	.prev-text_by-projects {
+		width: 100%;
+		margin-right: 0;
+	}
+	.br {
+		display: inline;
 	}
 }
