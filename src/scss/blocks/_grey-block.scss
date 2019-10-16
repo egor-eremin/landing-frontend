@@ -90,3 +90,15 @@
 .advantages-list .slick-slide > div {
 	height: 100%;
 }
+.advantages-text_result {
+	font-size: 18px;
+	line-height: 1.78;
+}
+.advantages-list__item-icon_result {
+	width: 96px;
+	height: 96px;
+	background: url("../images/result.png") no-repeat;
+	background-size: 100%;
+	flex-shrink: 0;
+	margin-bottom: 42px;
+}

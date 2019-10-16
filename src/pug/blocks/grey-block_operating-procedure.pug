@@ -41,11 +41,11 @@ mixin grey-block-content_operation-procedure
 				li.advantages-list__item.advantages-list__item_result.advantages-list__item_5.advantages-list__item_operation-procedure
 					.advantages-list__item-icon.advantages-list__item-icon_result
 					.advantages-text-block
-						.advantages-title Результат
-						.advantages-text
+						.advantages-title.advantages-title_result Результат
+						.advantages-text.advantages-text_result
 							| Вы&nbsp;получите html-страницы с&nbsp;адаптивной, быстрой и&nbsp;кроссбраузерной версткой.
 							| С&nbsp;проработанной анимацией и&nbsp;эффектами.
-							| Ошибки в&nbsp;вёрстке исправим за&nbsp;свой счёт
+							| <span class="br">Ошибки в&nbsp;вёрстке исправим за&nbsp;свой счёт.</span>
 mixin grey-block_operation-procedure(class_modification)
 	if class_modification === undefined
 		section(class= 'grey-block animation-advantages')
