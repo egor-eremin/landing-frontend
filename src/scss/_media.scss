@@ -4,9 +4,10 @@
 	}
 }
 @media (max-height: 720px) {
-	//.full-height {
-	//	min-height: auto;
-	//}
+	.full-height {
+		padding-top: 54px;
+		padding-bottom: 96px;
+	}
 	.template-wrapper_welcom-block {
 		height: auto;
 	}

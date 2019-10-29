@@ -296,8 +296,9 @@ function validationForm(formInit) {
         //     },
         // },
         submitHandler: function(form) {
+            let currentPhone = $('.user-phone').val();
 
-
+            console.log(currentPhone);
             $.ajax({
                 type: $(form).attr('method'),
                 url: $(form).attr('action'),
@@ -309,6 +310,7 @@ function validationForm(formInit) {
 
                 dataType: 'text',
                 success: function () {
+                        $('.current-number-phone').text(currentPhone);
                         $.magnificPopup.open({
                             items: {
                                 src: '.answer-form'
@@ -324,6 +326,7 @@ function validationForm(formInit) {
                                     $('html').css('overflow', 'visible');
                                     $(form).find('input').val('');
                                     $(form).find('textarea').val('');
+                                    $('.current-number-phone').text('');
                                 }
                             }
                         });

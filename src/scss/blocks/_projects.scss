@@ -59,17 +59,18 @@
 	transition: .3s ease;
 	border-bottom: 1px solid rgba(0, 102, 255, 0);
 	margin-bottom: 26px;
+	display: inline-flex;
+	align-items: flex-start;
 	//border-radius: 2px;
-	&::before {
+	&::after {
 		content: "";
 		width: 16px;
-		height: 16px;
+		height: 18px;
 		display: block;
 		background: url("../images/link.svg") no-repeat;
-		position: absolute;
-		top: 0;
-		right: 0;
-		transform: translateX(calc(100% + 10px)) translateY(2px);
+		position: relative;
+		margin-left: 10px;
+		background-size: 100% 100%;
 	}
 	&:hover {
 		border-bottom-color: rgba(0, 102, 255, 1);
@@ -232,7 +233,8 @@
 }
 .projects-slider button.owl-dot.stopAnimation::before {
 	animation-duration: 0s;
-	transform: translate(0, -50%);
+	transform: translate(0, -50%) !important;
+	animation: none;
 }
 .projects-slider:hover button.owl-dot.animate::before {
 	animation-play-state: paused;
