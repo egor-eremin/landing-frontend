@@ -68,13 +68,22 @@
 		height: 18px;
 		display: block;
 		background: url("../images/link.svg") no-repeat;
-		position: relative;
-		margin-left: 10px;
+		position: absolute;
 		background-size: 100% 100%;
+		//opacity: 0;
+		//visibility: hidden;
+		top: 0;
+		right: 0;
+		transform: translateX(calc(100% + 10px));
+		transition: .3s ease;
 	}
 	&:hover {
 		border-bottom-color: rgba(0, 102, 255, 1);
 		}
+	//&:hover::after {
+	//	opacity: 1;
+	//	visibility: visible;
+	//}
 }
 .description-title {
 	font-size: 18px;
@@ -151,6 +160,7 @@
 	&:active {
 		border: solid 1px #eef1f8;
 		transform: translateY(8px);
+		box-shadow: none;
 	}
 }
 .layout-cost {
