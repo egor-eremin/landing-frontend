@@ -114,10 +114,10 @@
             thisProjectWrapper.css('max-height', hideElementHeight + currentMaxHeight + 'px');
             hideElement.removeClass('hide-project');
         if (hideElement.next().length == 0) {
-            setInterval(function () {
+            setTimeout(function () {
                 $('.btn-show-more').addClass('hide');
                 $('.btn-show-more').next('.all-projects').removeClass('hide')
-            }, 300);
+            }, 300)
         }
     });
 })();

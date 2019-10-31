@@ -1,3 +1,4 @@
+import Typed from 'typed.js';
 (function printedText() {
     $('.welcom-block').viewportChecker({
         classToAdd: 'active',

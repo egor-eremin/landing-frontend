@@ -6,8 +6,8 @@ import 'magnific-popup';
 import 'jquery-validation';
 import 'focus-visible';
 import 'dm-file-uploader';
+// import Typed from 'typed.js';
 import objectFitImages from 'object-fit-images';
-
 
 svg4everybody();
 objectFitImages();

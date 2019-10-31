@@ -69,6 +69,7 @@
 		"scrollmagic": "2.0.6",
 		"slick-carousel": "1.8.1",
 		"svg4everybody": "2.1.9",
-		"typed.js": "2.0.10"
+		"typed.js": "2.0.10",
+		"wc-typed-js": "1.0.1"
 	}
 }

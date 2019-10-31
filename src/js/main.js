@@ -10,6 +10,7 @@ require ('./vendor/jquery.inputmask.min');
 require ('./vendor/jquery.viewportchecker.min');
 require ('./vendor/owl.carousel.min');
 require ('./vendor/pathAnimator');
+// require ('./vendor/typed.min');
 
 
 $(document).ready(function () {
