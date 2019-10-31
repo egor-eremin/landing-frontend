@@ -298,7 +298,6 @@ function validationForm(formInit) {
         submitHandler: function(form) {
             let currentPhone = $('.user-phone').val();
 
-            console.log(currentPhone);
             $.ajax({
                 type: $(form).attr('method'),
                 url: $(form).attr('action'),

@@ -2,7 +2,7 @@ mixin grey-block-content_operation-procedure
 	.template-wrapper.template-wrapper_advantages.section-wrapper.template-wrapper_grey-block.full-height
 		.grey-block__col.grey-block__col_operation-procedure.grey-block__col_for-fixed
 			h2.main-h2 Порядок <span class="red-text">совместной работы</span>
-			//.grey-block__text
+			.grey-block__text
 			//	| Сюда&nbsp;бы текст написать, примерно три строки. Чтобы размер плашки был в&nbsp;размер текстового блока :(
 		.grey-block__col.grey-block__col_for-fixed
 			ul.advantages-list.advantages-list_operation-procedure
@@ -38,14 +38,14 @@ mixin grey-block-content_operation-procedure
 						.advantages-text
 							| После подписания акта, вы получите
 							| архив&nbsp;с исходными файлами
-				li.advantages-list__item.advantages-list__item_result.advantages-list__item_5.advantages-list__item_operation-procedure
-					.advantages-list__item-icon.advantages-list__item-icon_result
-					.advantages-text-block
-						.advantages-title.advantages-title_result Результат
-						.advantages-text.advantages-text_result
-							| Вы&nbsp;получите html-страницы с&nbsp;адаптивной, быстрой и&nbsp;кроссбраузерной версткой.
-							| С&nbsp;проработанной анимацией и&nbsp;эффектами.
-							| <span class="br">Ошибки в&nbsp;вёрстке исправим за&nbsp;свой счёт.</span>
+				//li.advantages-list__item.advantages-list__item_result.advantages-list__item_5.advantages-list__item_operation-procedure
+				//	.advantages-list__item-icon.advantages-list__item-icon_result
+				//	.advantages-text-block
+				//		.advantages-title.advantages-title_result Результат
+				//		.advantages-text.advantages-text_result
+				//			| Вы&nbsp;получите html-страницы с&nbsp;адаптивной, быстрой и&nbsp;кроссбраузерной версткой.
+				//			| С&nbsp;проработанной анимацией и&nbsp;эффектами.
+				//			| <span class="br">Ошибки в&nbsp;вёрстке исправим за&nbsp;свой счёт.</span>
 mixin grey-block_operation-procedure(class_modification)
 	if class_modification === undefined
 		section(class= 'grey-block animation-advantages')
