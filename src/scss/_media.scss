@@ -504,7 +504,7 @@
 	}
 	.projects-slider button.owl-dot.animate::before {
 		animation: none;
-		transform: translate(0, 0);
+		transform: translate(0, -50%);
 	}
 	.request-content {
 		//width: calc(100% - 144px);
