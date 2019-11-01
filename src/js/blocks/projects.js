@@ -77,15 +77,15 @@
         nav: true,
         autoplayHoverPause: false,
     });
-    $('.projects-slider').on('initialize.owl.carousel', function (event) {
-        thisSlider.find('.owl-dot.active').addClass('animate');
-    });
-    $('.projects-slider').on('translate.owl.carousel', function(event) {
-        var thisSlider = $(this);
-
-        thisSlider.find('.owl-dot.active ~ .owl-dot').removeClass('animate');
-        thisSlider.find('.owl-dot.active').prevAll().addClass('animate');
-    });
+    // $('.projects-slider').on('initialize.owl.carousel', function (event) {
+    //     thisSlider.find('.owl-dot.active').addClass('animate');
+    // });
+    // $('.projects-slider').on('translate.owl.carousel', function(event) {
+    //     var thisSlider = $(this);
+    //
+    //     thisSlider.find('.owl-dot.active ~ .owl-dot').removeClass('animate');
+    //     thisSlider.find('.owl-dot.active').prevAll().addClass('animate');
+    // });
 
 })();
 (function showMoreProject() {
