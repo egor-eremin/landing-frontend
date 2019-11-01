@@ -355,6 +355,9 @@
 	.projects-slider .owl-dots {
 		bottom: 16px;
 		top: auto;
+		max-width: 450px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	.btn-show-more {
 		max-width: 100%;
@@ -636,6 +639,18 @@
 	}
 	.actual-address {
 		max-width: 336px;
+	}
+	.projects-slider button.owl-dot {
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+	}
+	.projects-slider button.owl-dot::after, .projects-slider button.owl-dot::before {
+		width: 100%;
+		height: 100%;
+	}
+	.projects-slider .owl-dots {
+		bottom: 21px;
 	}
 }
 @media (max-width: 400px) {

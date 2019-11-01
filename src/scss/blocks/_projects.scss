@@ -200,6 +200,7 @@
 	transform: translate(-50%, 0);
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
@@ -235,10 +236,11 @@
 }
 .projects-slider button.owl-dot.animate::before,
 .projects-slider button.owl-dot.active::before {
-	animation-name: animationDots;
-	animation-duration: 0;
-	animation-timing-function: linear;
-	animation-fill-mode: forwards;
+	//animation-name: animationDots;
+	//animation-duration: 0;
+	//animation-timing-function: linear;
+	//animation-fill-mode: forwards;
+	transform: translate(0, -50%);
 }
 .projects-slider button.owl-dot.stopAnimation::before {
 	animation-duration: 0s;
