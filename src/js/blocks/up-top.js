@@ -1,7 +1,7 @@
 (function appToTop() {
-    $('.up-button').on('click', function () {
-        $('body, html').animate({
-            scrollTop: 0
-        }, 300);
-    });
+	$('.up-button').on('click', () => {
+		$('body, html').animate({
+			scrollTop: 0,
+		}, 300);
+	});
 })();

@@ -164,33 +164,6 @@ $(document).ready(function () {
                 transform: "translateX(0)",
                 opacity: 1
             })
-            // .to('.competencies__item_1',.5,{
-            //     opacity: 1
-            // })
-            // .to('.competencies__item_2',.5,{
-            //     opacity: 1
-            // })
-            // .to('.competencies__item_3',.5,{
-            //     opacity: 1
-            // })
-            // .to('.competencies__item_4',.5,{
-            //     opacity: 1
-            // })
-            // .to('.competencies__item_5',.5,{
-            //     opacity: 1
-            // })
-            // .to('.competencies__item_6',.5,{
-            //     opacity: 1
-            // })
-            // .to('.competencies__item_7',.5,{
-            //     opacity: 1
-            // })
-            // .to('.competencies__item_8',.5,{
-            //     opacity: 1
-            // })
-            // .to('.competencies__item_9',.5,{
-            //     opacity: 1
-            // })
 
         var scene = new ScrollMagic.Scene({
             triggerElement: ".our-team",
